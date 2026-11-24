@@ -6286,7 +6286,7 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
         h('div', { style: { fontWeight: 800, marginBottom: '6px' } }, native ? '导出 MP4（桌面版 · 一键完成）' : '导出素材包（浏览器模式）'),
         h('div', { class: 'hint' }, native
           ? '离线逐帧渲染 ' + W + '×' + H + ' @ ' + FPS + 'fps，叠加离线语音与字幕，调用本地 FFmpeg 合成 1080P 视频。'
-          : '浏览器无法直接启动本地编码器，会导出 WAV 配音 + SRT 字幕 + 每页 PNG 快照；桌面版可一键出 MP4。'),
+          : '浏览器无法直接启动本地编码器，会导出 WAV 配音 + SRT 字幕 + 每页 PNG 快照。要一整个 MP4：用命令行 `node tools/make-video.js`，或把这些素材拖进剪映。'),
       ]),
     ]));
     const bar = h('div', { class: 'progress', style: { marginTop: '14px' } }, [h('div', { class: 'fill', id: 'progFill' })]);
