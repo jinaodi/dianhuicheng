@@ -77,5 +77,8 @@ const v09 = `
 
 const a = bundle(v01, rel('v0.1/讲解成片_v0.1.html'));
 const b = bundle(v09, rel('v0.9/讲解成片_v0.9.html'));
-const c = bundle('', rel('v1.0/讲解成片_v1.0.html'));
-console.log('v0.1', a, '\nv0.9', b, '\nv1.0', c);
+// v1.0 直接使用官方打包产物（与 01_作品成品 完全一致）
+const single = fs.readFileSync(path.join(ROOT, 'dist', '讲解成片.html'), 'utf8');
+fs.mkdirSync(rel('v1.0'), { recursive: true });
+fs.writeFileSync(rel('v1.0/讲解成片_v1.0.html'), single);
+console.log('v0.1', a, '\nv0.9', b, '\nv1.0', (Buffer.byteLength(single) / 1024).toFixed(0) + ' KB (dist 原样)');
