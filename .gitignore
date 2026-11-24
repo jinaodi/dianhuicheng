@@ -1,0 +1,10 @@
+﻿node_modules/
+shots/
+参赛作品_讲解成片/
+dist/
+desktop/*.log
+desktop/*.mp4
+shots/
+*.mp4
+.tmp/
+tools/pinyin.txt

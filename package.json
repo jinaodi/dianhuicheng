@@ -1,0 +1,1 @@
+{"name":"dianhuicheng-dev","private":true,"devDependencies":{"@playwright/test":"^1.50.0","electron":"^33.4.11","esbuild":"^0.25.0","playwright":"^1.50.0"},"allowScripts":{"esbuild@0.25.12":true,"electron@33.4.11":true}}

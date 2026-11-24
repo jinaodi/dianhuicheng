@@ -1,0 +1,9 @@
+{
+  "name": "dianhuicheng",
+  "productName": "讲解成片",
+  "version": "1.0.0",
+  "description": "讲解成片 · 把稿子变成带配音与字幕的 1080P 讲解视频（离线）",
+  "main": "main.js",
+  "author": "赛道三参赛作品",
+  "license": "MIT"
+}

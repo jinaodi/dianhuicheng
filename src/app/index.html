@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>讲解成片 · 把稿子变成能看的视频</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">讲</span>
+      <div>
+        <div class="brand-name">讲解成片 <span class="ver" id="verTag">v1.0</span></div>
+        <div class="brand-sub">稿子 → 分镜 → 配音 → 字幕 → 成片，一个页面完成</div>
+      </div>
+    </div>
+    <nav class="steps" id="steps">
+      <button class="step" data-step="1">① 稿子</button>
+      <button class="step" data-step="2">② 风格</button>
+      <button class="step" data-step="3">③ 点播</button>
+      <button class="step" data-step="4">④ 导出成片</button>
+    </nav>
+    <div class="actions">
+      <button id="btnNew" class="ghost" title="新建空白项目">新建</button>
+      <button id="btnOpen" class="ghost" title="打开 .jpc 项目">打开</button>
+      <button id="btnSave" class="ghost" title="保存 .jpc 项目">保存</button>
+      <button id="btnTpl" class="ghost" title="载入示例稿">示例</button>
+    </div>
+  </header>
+  <main id="main"></main>
+  <div id="toast" class="toast"></div>
+</div>
+<script src="../engine/packet.js"></script>
+<script src="../engine/timeline.js"></script>
+<script src="../engine/pinyin-data.js"></script>
+<script src="../engine/voice.js"></script>
+<script src="../engine/backgrounds.js"></script>
+<script src="../engine/templates.js"></script>
+<script src="../engine/cards.js"></script>
+<script src="ui.js"></script>
+<script src="screen1.js"></script>
+<script src="screen2.js"></script>
+<script src="screen3.js"></script>
+<script src="screen4.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
